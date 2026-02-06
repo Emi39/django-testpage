@@ -26,7 +26,13 @@ SECRET_KEY = 'django-insecure-&b1w+p)=oj+_r(sgo15jt1y#_n&k-czl$3#h83)*pphw)_xfy4
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = os.getenv('DJANGO_ALLOWED_HOSTS', 'localhost,127.0.0.1').split(',')
+ALLOWED_HOSTS = [
+    'softwareca.pp.ua',
+    'www.softwareca.pp.ua',
+    '.koyeb.app',  # allows your default Koyeb subdomain like xxxx.koyeb.app
+    'localhost',
+    '127.0.0.1',
+]
 
 
 # Application definition
